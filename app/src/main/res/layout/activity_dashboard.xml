@@ -5,19 +5,18 @@
     android:layout_height="match_parent"
     android:background="#F8F8F8">
 
-    <!-- Top Bar & Header Background -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <!-- Top Bar & Header Background -->
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#2E7D32"
             android:padding="20dp">
 
-            <!-- Menu Icon -->
             <ImageView
                 android:id="@+id/menuIcon"
                 android:layout_width="28dp"
@@ -27,7 +26,6 @@
                 android:layout_centerVertical="true"
                 android:contentDescription="Menu"/>
 
-            <!-- Greeting Text -->
             <LinearLayout
                 android:id="@+id/greetingLayout"
                 android:layout_width="wrap_content"
@@ -53,8 +51,8 @@
                     android:textSize="12sp"/>
             </LinearLayout>
 
-            <!-- Notifications Icon -->
             <ImageView
+                android:id="@+id/notificationsIconTop"
                 android:layout_width="28dp"
                 android:layout_height="28dp"
                 android:src="@drawable/ic_notifications"
@@ -65,7 +63,8 @@
 
         <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="0dp"
+            android:layout_weight="1">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -219,21 +218,47 @@
                             style="@style/DashboardIconTextStyle"
                             android:text="Weather\nUpdates"/>
                     </LinearLayout>
-                </GridLayout>
 
+                    <!-- Profit Calculator -->
+                    <LinearLayout
+                        android:id="@+id/profitCalcCard"
+                        style="@style/DashboardIconContainerStyle">
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/ic_home"
+                            app:tint="#2E7D32"
+                            android:contentDescription="Profit Calculator"/>
+                        <TextView
+                            style="@style/DashboardIconTextStyle"
+                            android:text="Profit\nCalculator"/>
+                    </LinearLayout>
+
+                    <!-- Expert Chat -->
+                    <LinearLayout
+                        android:id="@+id/expertChatCard"
+                        style="@style/DashboardIconContainerStyle">
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/ic_messages"
+                            app:tint="#2E7D32"
+                            android:contentDescription="Expert Chat"/>
+                        <TextView
+                            style="@style/DashboardIconTextStyle"
+                            android:text="Ask\nExpert"/>
+                    </LinearLayout>
+                </GridLayout>
             </LinearLayout>
         </androidx.core.widget.NestedScrollView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="#FFFFFF"
+            app:itemIconTint="#2E7D32"
+            app:itemTextColor="#2E7D32"
+            app:menu="@menu/bottom_nav_menu" />
     </LinearLayout>
-
-    <!-- Bottom Navigation -->
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigation"
-        android:layout_width="match_parent"
-        android:layout_height="64dp"
-        android:layout_gravity="bottom"
-        android:background="#FFFFFF"
-        app:itemIconTint="#2E7D32"
-        app:itemTextColor="#2E7D32"
-        app:menu="@menu/bottom_nav_menu" />
-
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
