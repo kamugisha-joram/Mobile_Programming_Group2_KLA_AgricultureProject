@@ -10,7 +10,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <!-- Top Bar & Header Background -->
+        <!-- Top Bar and Header Background -->
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -177,7 +177,7 @@
                             android:text="Marketplace"/>
                     </LinearLayout>
 
-                    <!-- Seeds & Inputs -->
+                    <!-- Seeds and Inputs -->
                     <LinearLayout
                         android:id="@+id/agroInputsCard"
                         style="@style/DashboardIconContainerStyle">
@@ -188,7 +188,7 @@
                             android:contentDescription="Seeds and Inputs"/>
                         <TextView
                             style="@style/DashboardIconTextStyle"
-                            android:text="Seeds \u0026\nAgro-Inputs"/>
+                            android:text="Seeds &amp;\nAgro-Inputs"/>
                     </LinearLayout>
 
                     <!-- Crop Calendar -->
