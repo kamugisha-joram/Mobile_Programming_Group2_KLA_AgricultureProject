@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "98320483741",
+    "project_id": "agricapp-86c99",
+    "storage_bucket": "agricapp-86c99.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:98320483741:android:1af6fa705618cc6bdfdb74",
+        "android_client_info": {
+          "package_name": "com.example.agricapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDP64CeRENUWrDXnt_cJLlwS1INrDkCPt8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">AgricApp</string>
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="greeting_farmer">Hello Farmer!</string>
+    <string name="login_to_continue">Login to continue</string>
+    <string name="email_or_phone">Email or Phone</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="register_new">REGISTER NEW ACCOUNT</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="quick_access">Quick Access</string>
+    <string name="crop_info">Crop Information</string>
+    <string name="disease_detection">Disease Detection</string>
+    <string name="marketplace">Marketplace</string>
+    <string name="agro_inputs">Agro-Inputs</string>
+    <string name="crop_calendar">Crop Calendar</string>
+    <string name="weather_updates">Weather Updates</string>
+    <string name="profit_calc">Profit Calculator</string>
+    <string name="expert_chat">Ask Expert</string>
+
+    <!-- New Features -->
+    <string name="pest_risk">Pest Risk Map</string>
+    <string name="market_trends">Market Trends</string>
+    <string name="govt_alerts">Govt. Subsidies</string>
+    <string name="qr_scanner">QR Scanner</string>
+    <string name="community_tips">Community Tips</string>
+    <string name="voice_assistant">Voice Assistant</string>
+</resources>
