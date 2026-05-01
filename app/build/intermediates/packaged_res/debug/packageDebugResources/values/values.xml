@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent">#F5F5F5</color>
+    <color name="black">#000000</color>
+    <color name="gray">#757575</color>
+    <color name="light_gray">#E0E0E0</color>
+    <color name="primary">#2E7D32</color>
+    <color name="primaryDark">#1B5E20</color>
+    <color name="white">#FFFFFF</color>
+    <string name="agro_inputs">Agro-Inputs</string>
+    <string name="app_name">AgricApp</string>
+    <string name="community_tips">Community Tips</string>
+    <string name="crop_calendar">Crop Calendar</string>
+    <string name="crop_info">Crop Information</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="disease_detection">Disease Detection</string>
+    <string name="email_or_phone">Email or Phone</string>
+    <string name="expert_chat">Ask Expert</string>
+    <string name="gcm_defaultSenderId" translatable="false">98320483741</string>
+    <string name="google_api_key" translatable="false">AIzaSyDP64CeRENUWrDXnt_cJLlwS1INrDkCPt8</string>
+    <string name="google_app_id" translatable="false">1:98320483741:android:1af6fa705618cc6bdfdb74</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDP64CeRENUWrDXnt_cJLlwS1INrDkCPt8</string>
+    <string name="google_storage_bucket" translatable="false">agricapp-86c99.firebasestorage.app</string>
+    <string name="govt_alerts">Govt. Subsidies</string>
+    <string name="greeting_farmer">Hello Farmer!</string>
+    <string name="login">LOGIN</string>
+    <string name="login_to_continue">Login to continue</string>
+    <string name="market_trends">Market Trends</string>
+    <string name="marketplace">Marketplace</string>
+    <string name="password">Password</string>
+    <string name="pest_risk">Pest Risk Map</string>
+    <string name="profit_calc">Profit Calculator</string>
+    <string name="project_id" translatable="false">agricapp-86c99</string>
+    <string name="qr_scanner">QR Scanner</string>
+    <string name="quick_access">Quick Access</string>
+    <string name="register_new">REGISTER NEW ACCOUNT</string>
+    <string name="voice_assistant">Voice Assistant</string>
+    <string name="weather_updates">Weather Updates</string>
+    <string name="welcome_back">Welcome Back!</string>
+    <style name="CropFilterChip">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingHorizontal">16dp</item>
+        <item name="android:paddingVertical">8dp</item>
+        <item name="android:background">@drawable/bg_chip_unselected</item>
+        <item name="android:textColor">#757575</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="CropFilterChipSelected">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingHorizontal">16dp</item>
+        <item name="android:paddingVertical">8dp</item>
+        <item name="android:background">@drawable/bg_chip_selected</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="DashboardIconContainerStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:background">@drawable/bg_dashboard_card</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+    <style name="DashboardIconTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#757575</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+    <style name="Theme.AgricApp" parent="Theme.MaterialComponents.Light.NoActionBar">
+        
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <item name="colorAccent">@color/accent</item>
+
+        
+        <item name="android:statusBarColor">@color/primaryDark</item>
+    </style>
+</resources>

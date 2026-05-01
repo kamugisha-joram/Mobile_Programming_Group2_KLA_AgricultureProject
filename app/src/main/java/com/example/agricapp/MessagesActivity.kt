@@ -2,14 +2,34 @@ package com.example.agricapp
 
 import android.content.Intent
 import android.os.Bundle
+<<<<<<< HEAD
+=======
+import android.view.LayoutInflater
+import android.widget.ImageView
+import android.widget.LinearLayout
+import android.widget.TextView
+import android.widget.Toast
+>>>>>>> Robert
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MessagesActivity : AppCompatActivity() {
+<<<<<<< HEAD
+=======
+
+>>>>>>> Robert
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_messages)
 
+<<<<<<< HEAD
+=======
+        setupBottomNavigation()
+        setupDummyMessages()
+    }
+
+    private fun setupBottomNavigation() {
+>>>>>>> Robert
         val bottomNav = findViewById<BottomNavigationView>(R.id.bottomNavigation)
         bottomNav.selectedItemId = R.id.nav_messages
 
@@ -35,4 +55,34 @@ class MessagesActivity : AppCompatActivity() {
             }
         }
     }
+<<<<<<< HEAD
+=======
+
+    private fun setupDummyMessages() {
+        val container = findViewById<LinearLayout>(R.id.messagesContainer)
+        val messages = listOf(
+            Message("Agro-Store", "Your order is ready for pickup!", "10:30 AM"),
+            Message("Farming Support", "How can we help you today?", "Yesterday"),
+            Message("Village Group", "New discussion in 'Maize Farming'", "Monday")
+        )
+
+        container.removeAllViews()
+        val inflater = LayoutInflater.from(this)
+
+        for (msg in messages) {
+            val itemView = inflater.inflate(R.layout.item_message, container, false)
+            itemView.findViewById<TextView>(R.id.senderName).text = msg.sender
+            itemView.findViewById<TextView>(R.id.messageSnippet).text = msg.snippet
+            itemView.findViewById<TextView>(R.id.messageTime).text = msg.time
+            
+            itemView.setOnClickListener {
+                Toast.makeText(this, "Chat with ${msg.sender} coming soon", Toast.LENGTH_SHORT).show()
+            }
+            
+            container.addView(itemView)
+        }
+    }
+
+    data class Message(val sender: String, val snippet: String, val time: String)
+>>>>>>> Robert
 }

@@ -1,0 +1,126 @@
+[
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-mergeDebugResources-57:\\layout\\activity_profit_calculator.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-main-60:\\layout\\activity_profit_calculator.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-mergeDebugResources-57:\\layout\\activity_register.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-main-60:\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-mergeDebugResources-57:\\layout\\item_agro_input.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-main-60:\\layout\\item_agro_input.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-mergeDebugResources-57:\\layout\\activity_govt_alerts.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-main-60:\\layout\\activity_govt_alerts.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-mergeDebugResources-57:\\layout\\activity_product_detail.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-main-60:\\layout\\activity_product_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-mergeDebugResources-57:\\layout\\activity_crop_info.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-main-60:\\layout\\activity_crop_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-mergeDebugResources-57:\\layout\\activity_pest_risk.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-main-60:\\layout\\activity_pest_risk.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-mergeDebugResources-57:\\layout\\activity_dashboard.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-main-60:\\layout\\activity_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-mergeDebugResources-57:\\layout\\item_symptom.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-main-60:\\layout\\item_symptom.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-mergeDebugResources-57:\\layout\\activity_weather.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-main-60:\\layout\\activity_weather.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-mergeDebugResources-57:\\layout\\item_notification.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-main-60:\\layout\\item_notification.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-mergeDebugResources-57:\\layout\\item_community_tip.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-main-60:\\layout\\item_community_tip.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-mergeDebugResources-57:\\layout\\activity_marketplace.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-main-60:\\layout\\activity_marketplace.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-mergeDebugResources-57:\\layout\\activity_agro_inputs.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-main-60:\\layout\\activity_agro_inputs.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-mergeDebugResources-57:\\layout\\activity_profile.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-main-60:\\layout\\activity_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-mergeDebugResources-57:\\layout\\activity_treatment.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-main-60:\\layout\\activity_treatment.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-mergeDebugResources-57:\\layout\\activity_market_trends.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-main-60:\\layout\\activity_market_trends.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-mergeDebugResources-57:\\layout\\activity_login.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-main-60:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-mergeDebugResources-57:\\layout\\activity_notifications.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-main-60:\\layout\\activity_notifications.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-mergeDebugResources-57:\\layout\\activity_disease.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-main-60:\\layout\\activity_disease.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-mergeDebugResources-57:\\layout\\activity_qr_scanner.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-main-60:\\layout\\activity_qr_scanner.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-mergeDebugResources-57:\\layout\\item_marketplace.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-main-60:\\layout\\item_marketplace.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-mergeDebugResources-57:\\layout\\activity_community_tips.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-main-60:\\layout\\activity_community_tips.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-mergeDebugResources-57:\\layout\\activity_crop_calendar.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-main-60:\\layout\\activity_crop_calendar.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-mergeDebugResources-57:\\layout\\item_growth_stage.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-main-60:\\layout\\item_growth_stage.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-mergeDebugResources-57:\\layout\\item_profile_option.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-main-60:\\layout\\item_profile_option.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-mergeDebugResources-57:\\layout\\item_weather_forecast.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-main-60:\\layout\\item_weather_forecast.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-mergeDebugResources-57:\\layout\\item_crop.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-main-60:\\layout\\item_crop.xml"
+    },
+    {
+        "merged": "com.example.agricapp-mergeDebugResources-57:/layout/activity_crop_calendar.xml",
+        "source": "com.example.agricapp-main-60:/layout/activity_crop_calendar.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-mergeDebugResources-57:\\layout\\item_message.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-main-60:\\layout\\item_message.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-mergeDebugResources-57:\\layout\\activity_messages.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\9.2.1\\com.example.agricapp-main-60:\\layout\\activity_messages.xml"
+    }
+]

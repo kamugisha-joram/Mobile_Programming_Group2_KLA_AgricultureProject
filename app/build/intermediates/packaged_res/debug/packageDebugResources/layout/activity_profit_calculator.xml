@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Top App Bar -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="#2E7D32"
+            android:paddingHorizontal="16dp">
+
+            <ImageView
+                android:id="@+id/backBtn"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_arrow_back"
+                android:contentDescription="Back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Profit Calculator"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Estimate Your Earnings"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Plan your farm finances effectively"
+                    android:textColor="#757575"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="24dp"/>
+
+                <!-- Input Fields -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select Crop"
+                    android:textColor="#757575"
+                    android:textSize="12sp"
+                    android:layout_marginStart="4dp"/>
+
+                <Spinner
+                    android:id="@+id/cropSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/bg_input_field"
+                    android:paddingHorizontal="12dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Land Size (Acres)"
+                    android:textColor="#757575"
+                    android:textSize="12sp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="4dp"/>
+
+                <EditText
+                    android:id="@+id/landSizeInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/bg_input_field"
+                    android:hint="e.g. 2"
+                    android:inputType="numberDecimal"
+                    android:padding="12dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/calculateBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="32dp"
+                    android:text="CALCULATE PROFIT"
+                    android:backgroundTint="#2E7D32"
+                    android:textStyle="bold"
+                    app:cornerRadius="8dp" />
+
+                <!-- Result Card -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/resultCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:visibility="gone"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="20dp"
+                        android:background="#E8F5E9">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Estimated Results"
+                            android:textColor="#2E7D32"
+                            android:textStyle="bold"
+                            android:textSize="16sp"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#A5D6A7"
+                            android:layout_marginVertical="12dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Expected Yield:"
+                                android:textColor="#757575"/>
+                            <TextView
+                                android:id="@+id/yieldResultText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2,000 Kg"
+                                android:textColor="#000000"
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="8dp">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Estimated Revenue:"
+                                android:textColor="#757575"/>
+                            <TextView
+                                android:id="@+id/revenueResultText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="UGX 2,400,000"
+                                android:textColor="#2E7D32"
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="8dp">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Est. Production Cost:"
+                                android:textColor="#757575"/>
+                            <TextView
+                                android:id="@+id/costResultText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="UGX 800,000"
+                                android:textColor="#D32F2F"
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#A5D6A7"
+                            android:layout_marginVertical="12dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Potential Profit:"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:textColor="#000000"/>
+                            <TextView
+                                android:id="@+id/profitResultText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="UGX 1,600,000"
+                                android:textColor="#2E7D32"
+                                android:textSize="18sp"
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="Note: Calculations are based on average market prices and historical yield data in Uganda. Actual results may vary."
+                    android:textColor="#757575"
+                    android:textSize="12sp"
+                    android:fontStyle="italic"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"/>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="#FFFFFF"
+            app:itemIconTint="#2E7D32"
+            app:itemTextColor="#2E7D32"
+            app:menu="@menu/bottom_nav_menu" />
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

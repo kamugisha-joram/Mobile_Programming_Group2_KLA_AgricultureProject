@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">98320483741</string>
+    <string name="google_api_key" translatable="false">AIzaSyDP64CeRENUWrDXnt_cJLlwS1INrDkCPt8</string>
+    <string name="google_app_id" translatable="false">1:98320483741:android:1af6fa705618cc6bdfdb74</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDP64CeRENUWrDXnt_cJLlwS1INrDkCPt8</string>
+    <string name="google_storage_bucket" translatable="false">agricapp-86c99.firebasestorage.app</string>
+    <string name="project_id" translatable="false">agricapp-86c99</string>
+</resources>

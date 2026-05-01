@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Top App Bar -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="#2E7D32"
+            android:paddingHorizontal="16dp">
+
+            <ImageView
+                android:id="@+id/backBtn"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_arrow_back"
+                app:tint="#FFFFFF"
+                android:contentDescription="Back"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Treatment Recommendation"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_search"
+                app:tint="#FFFFFF"
+                android:contentDescription="Search"/>
+        </RelativeLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Possible Disease Section -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Possible Disease"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="12dp"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="2dp"
+                    android:layout_marginBottom="24dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="12dp">
+
+                        <ImageView
+                            android:id="@+id/diseaseImage"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/maize"
+                            android:background="@drawable/bg_dashboard_card"
+                            android:contentDescription="Disease Image"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_marginStart="16dp">
+
+                            <TextView
+                                android:id="@+id/diseaseName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Maize Leaf Blight"
+                                android:textColor="#000000"
+                                android:textSize="16sp"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/diseaseScientificName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="(Exserohilum turcicum)"
+                                android:textColor="#757575"
+                                android:textSize="12sp"
+                                android:textStyle="italic"
+                                android:layout_marginTop="2dp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Recommended Treatment Section -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Recommended Treatment"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="12dp"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="2dp"
+                    android:layout_marginBottom="24dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:id="@+id/drugImage"
+                                android:layout_width="60dp"
+                                android:layout_height="80dp"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/ambush"
+                                android:contentDescription="Drug Image"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginStart="16dp">
+
+                                <TextView
+                                    android:id="@+id/drugName"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Fungicide: Mancozeb 80% WP"
+                                    android:textColor="#2E7D32"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold"/>
+
+                                <TextView
+                                    android:id="@+id/drugDose"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Dose: 20g per 20 Litres of water"
+                                    android:textColor="#000000"
+                                    android:textSize="12sp"
+                                    android:layout_marginTop="8dp"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="How to use:"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="16dp"/>
+
+                        <TextView
+                            android:id="@+id/usageInstructions"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Spray evenly on leaves in the morning or evening. Repeat after 7-10 days."
+                            android:textColor="#757575"
+                            android:textSize="12sp"
+                            android:layout_marginTop="4dp"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Other Tips Section -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Other Tips"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="12dp"/>
+
+                <TextView
+                    android:id="@+id/otherTips"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• Use resistant seed varieties.\n• Ensure proper spacing.\n• Avoid overhead irrigation."
+                    android:textColor="#757575"
+                    android:textSize="14sp"
+                    android:lineSpacingExtra="4dp"
+                    android:layout_marginBottom="24dp"/>
+
+                <!-- Warning Footer -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="#E8F5E9"
+                    android:padding="12dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_info"
+                        app:tint="#2E7D32"
+                        android:contentDescription="Warning Icon"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:text="Always read instructions on the label before use."
+                        android:textColor="#2E7D32"
+                        android:textSize="12sp"
+                        android:textStyle="italic"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"/>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+    <!-- Bottom Navigation Mockup -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_gravity="bottom"
+        android:background="#FFFFFF"
+        app:itemIconTint="#2E7D32"
+        app:itemTextColor="#2E7D32"
+        app:menu="@menu/bottom_nav_menu" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

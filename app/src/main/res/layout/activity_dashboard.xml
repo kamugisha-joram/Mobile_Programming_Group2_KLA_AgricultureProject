@@ -10,7 +10,11 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+<<<<<<< HEAD
         <!-- Top Bar and Header Background -->
+=======
+        <!-- Top Bar -->
+>>>>>>> Robert
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -24,7 +28,12 @@
                 android:src="@drawable/ic_menu"
                 android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
+<<<<<<< HEAD
                 android:contentDescription="Menu"/>
+=======
+                android:contentDescription="Menu"
+                app:tint="#FFFFFF"/>
+>>>>>>> Robert
 
             <LinearLayout
                 android:id="@+id/greetingLayout"
@@ -44,11 +53,21 @@
                     android:textStyle="bold"/>
 
                 <TextView
+<<<<<<< HEAD
+=======
+                    android:id="@+id/voiceAssistantBtn"
+>>>>>>> Robert
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Good morning"
                     android:textColor="#CCFFFFFF"
+<<<<<<< HEAD
                     android:textSize="12sp"/>
+=======
+                    android:textSize="12sp"
+                    android:clickable="true"
+                    android:focusable="true"/>
+>>>>>>> Robert
             </LinearLayout>
 
             <ImageView
@@ -58,7 +77,12 @@
                 android:src="@drawable/ic_notifications"
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
+<<<<<<< HEAD
                 android:contentDescription="Notifications"/>
+=======
+                android:contentDescription="Notifications"
+                app:tint="#FFFFFF"/>
+>>>>>>> Robert
         </RelativeLayout>
 
         <androidx.core.widget.NestedScrollView
@@ -82,14 +106,23 @@
 
                     <RelativeLayout
                         android:layout_width="match_parent"
+<<<<<<< HEAD
                         android:layout_height="match_parent">
+=======
+                        android:layout_height="match_parent"
+                        android:background="#D1F2EB">
+>>>>>>> Robert
 
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:scaleType="centerCrop"
                             android:src="@drawable/ic_launcher_background"
+<<<<<<< HEAD
                             android:alpha="0.3"
+=======
+                            android:alpha="0.1"
+>>>>>>> Robert
                             android:contentDescription="Banner Image"/>
 
                         <LinearLayout
@@ -104,7 +137,11 @@
                                 android:layout_height="wrap_content"
                                 android:text="Good farming"
                                 android:textColor="#000000"
+<<<<<<< HEAD
                                 android:textSize="18sp"
+=======
+                                android:textSize="20sp"
+>>>>>>> Robert
                                 android:textStyle="bold"/>
 
                             <TextView
@@ -143,7 +180,12 @@
                             android:layout_width="32dp"
                             android:layout_height="32dp"
                             android:src="@drawable/ic_info"
+<<<<<<< HEAD
                             android:contentDescription="Crop Info"/>
+=======
+                            android:contentDescription="Crop Info"
+                            app:tint="#757575"/>
+>>>>>>> Robert
                         <TextView
                             style="@style/DashboardIconTextStyle"
                             android:text="Crop\nInformation"/>
@@ -157,7 +199,12 @@
                             android:layout_width="32dp"
                             android:layout_height="32dp"
                             android:src="@drawable/ic_plus"
+<<<<<<< HEAD
                             android:contentDescription="Disease Detection"/>
+=======
+                            android:contentDescription="Disease Detection"
+                            app:tint="#757575"/>
+>>>>>>> Robert
                         <TextView
                             style="@style/DashboardIconTextStyle"
                             android:text="Disease\nDetection"/>
@@ -171,21 +218,36 @@
                             android:layout_width="32dp"
                             android:layout_height="32dp"
                             android:src="@drawable/ic_marketplace"
+<<<<<<< HEAD
                             android:contentDescription="Marketplace"/>
+=======
+                            android:contentDescription="Marketplace"
+                            app:tint="#757575"/>
+>>>>>>> Robert
                         <TextView
                             style="@style/DashboardIconTextStyle"
                             android:text="Marketplace"/>
                     </LinearLayout>
 
+<<<<<<< HEAD
                     <!-- Seeds and Inputs -->
+=======
+                    <!-- Seeds & Agro-Inputs -->
+>>>>>>> Robert
                     <LinearLayout
                         android:id="@+id/agroInputsCard"
                         style="@style/DashboardIconContainerStyle">
                         <ImageView
                             android:layout_width="32dp"
                             android:layout_height="32dp"
+<<<<<<< HEAD
                             android:src="@drawable/ic_logo"
                             android:contentDescription="Seeds and Inputs"/>
+=======
+                            android:src="@drawable/ic_launcher_foreground"
+                            android:contentDescription="Seeds and Inputs"
+                            app:tint="#757575"/>
+>>>>>>> Robert
                         <TextView
                             style="@style/DashboardIconTextStyle"
                             android:text="Seeds &amp;\nAgro-Inputs"/>
@@ -199,13 +261,22 @@
                             android:layout_width="32dp"
                             android:layout_height="32dp"
                             android:src="@drawable/ic_person"
+<<<<<<< HEAD
                             android:contentDescription="Crop Calendar"/>
+=======
+                            android:contentDescription="Crop Calendar"
+                            app:tint="#757575"/>
+>>>>>>> Robert
                         <TextView
                             style="@style/DashboardIconTextStyle"
                             android:text="Crop\nCalendar"/>
                     </LinearLayout>
 
+<<<<<<< HEAD
                     <!-- Weather -->
+=======
+                    <!-- Weather Updates -->
+>>>>>>> Robert
                     <LinearLayout
                         android:id="@+id/weatherCard"
                         style="@style/DashboardIconContainerStyle">
@@ -213,7 +284,12 @@
                             android:layout_width="32dp"
                             android:layout_height="32dp"
                             android:src="@drawable/ic_weather"
+<<<<<<< HEAD
                             android:contentDescription="Weather Updates"/>
+=======
+                            android:contentDescription="Weather Updates"
+                            app:tint="#757575"/>
+>>>>>>> Robert
                         <TextView
                             style="@style/DashboardIconTextStyle"
                             android:text="Weather\nUpdates"/>
@@ -227,14 +303,23 @@
                             android:layout_width="32dp"
                             android:layout_height="32dp"
                             android:src="@drawable/ic_home"
+<<<<<<< HEAD
                             app:tint="#2E7D32"
                             android:contentDescription="Profit Calculator"/>
+=======
+                            android:contentDescription="Profit Calculator"
+                            app:tint="#2E7D32"/>
+>>>>>>> Robert
                         <TextView
                             style="@style/DashboardIconTextStyle"
                             android:text="Profit\nCalculator"/>
                     </LinearLayout>
 
+<<<<<<< HEAD
                     <!-- Expert Chat -->
+=======
+                    <!-- Ask Expert -->
+>>>>>>> Robert
                     <LinearLayout
                         android:id="@+id/expertChatCard"
                         style="@style/DashboardIconContainerStyle">
@@ -242,8 +327,13 @@
                             android:layout_width="32dp"
                             android:layout_height="32dp"
                             android:src="@drawable/ic_messages"
+<<<<<<< HEAD
                             app:tint="#2E7D32"
                             android:contentDescription="Expert Chat"/>
+=======
+                            android:contentDescription="Ask Expert"
+                            app:tint="#2E7D32"/>
+>>>>>>> Robert
                         <TextView
                             style="@style/DashboardIconTextStyle"
                             android:text="Ask\nExpert"/>

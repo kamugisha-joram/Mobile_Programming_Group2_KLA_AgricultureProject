@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Top App Bar -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="#2E7D32"
+            android:paddingHorizontal="16dp">
+
+            <ImageView
+                android:id="@+id/backBtn"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_arrow_back"
+                android:contentDescription="Back"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Seeds \u0026 Agro-Inputs"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_search"
+                app:tint="#FFFFFF"
+                android:contentDescription="Search"/>
+        </RelativeLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Search Input -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/bg_dashboard_card"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="12dp"
+                    android:layout_marginBottom="16dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_search"
+                        android:alpha="0.5"
+                        android:contentDescription="Search Icon Inner"/>
+
+                    <EditText
+                        android:id="@+id/searchEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:background="@android:color/transparent"
+                        android:hint="Search seeds, fertilizers, etc..."
+                        android:textSize="14sp"
+                        android:inputType="text"
+                        android:importantForAutofill="no"/>
+                </LinearLayout>
+
+                <!-- Filters -->
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    android:layout_marginBottom="16dp">
+
+                    <LinearLayout
+                        android:id="@+id/chipContainer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/chipSeeds"
+                            style="@style/CropFilterChipSelected"
+                            android:text="Seeds"/>
+
+                        <TextView
+                            android:id="@+id/chipFertilizers"
+                            style="@style/CropFilterChip"
+                            android:text="Fertilizers"
+                            android:layout_marginStart="8dp"/>
+
+                        <TextView
+                            android:id="@+id/chipPesticides"
+                            style="@style/CropFilterChip"
+                            android:text="Pesticides"
+                            android:layout_marginStart="8dp"/>
+
+                        <TextView
+                            android:id="@+id/chipTools"
+                            style="@style/CropFilterChip"
+                            android:text="Tools"
+                            android:layout_marginStart="8dp"/>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <!-- Inputs List -->
+                <LinearLayout
+                    android:id="@+id/inputsListContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <!-- Dynamic items will be added here -->
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"/>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+    <!-- Bottom Navigation Mockup -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_gravity="bottom"
+        android:background="#FFFFFF"
+        app:itemIconTint="#2E7D32"
+        app:itemTextColor="#2E7D32"
+        app:menu="@menu/bottom_nav_menu" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

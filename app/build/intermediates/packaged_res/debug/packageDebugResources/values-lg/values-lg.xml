@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="agro_inputs">Ebiganyula ebirime</string>
+    <string name="app_name">AgricApp</string>
+    <string name="community_tips">Amagezi g\'Abalimi</string>
+    <string name="crop_calendar">Ebiseera by\'okulima</string>
+    <string name="crop_info">Ebifa ku birime</string>
+    <string name="dashboard">Wano w\'otandikira</string>
+    <string name="disease_detection">Okuzuula endwadde</string>
+    <string name="email_or_phone">Email oba Essimu</string>
+    <string name="expert_chat">Buuza Omukugu</string>
+    <string name="govt_alerts">Obuyambi bwa Gavumenti</string>
+    <string name="greeting_farmer">Otyanno Mulimi!</string>
+    <string name="login">YINGIRA</string>
+    <string name="login_to_continue">Yingira otandike</string>
+    <string name="market_trends">Ebbeeyi y\'Akatale</string>
+    <string name="marketplace">Akatale</string>
+    <string name="password">Akasumuluzo</string>
+    <string name="pest_risk">Maapu y\'Obulwadde</string>
+    <string name="profit_calc">Okubala amagoba</string>
+    <string name="qr_scanner">QR Sikyana</string>
+    <string name="quick_access">Genda mangu ku</string>
+    <string name="register_new">WANDIISA AKAAWUNTI EMPYA</string>
+    <string name="voice_assistant">Omuyambi w\'Eddoboozi</string>
+    <string name="weather_updates">Okulagula obudde</string>
+    <string name="welcome_back">Ssebo/Nnyabo, tuddanyamu!</string>
+</resources>

@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+    <layouts>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
+        <config>
+          <theme>@style/Theme.AgricApp</theme>
+        </config>
+      </layout>
+    </layouts>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8d9b0db8-e9d0-4faa-a54d-a7b59d560515" name="Changes" comment="updating ProfileCalculatorActivity.kt QrScannerActivity and WeatherActivity.kt files" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[PhysicalDevice::serial=EQDUWGWGQOYDSWSS]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="AgricApp" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Joram" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;donemmanuel23&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/kamugisha-joram/Mobile_Programming_Group2_KLA_AgricultureProject&quot;,
+    &quot;accountId&quot;: &quot;2ed7c525-6b46-4c1f-888a-c2a792853f29&quot;
+  }
+}</component>
+  <component name="GradleScriptDefinitionsStorage" workingDir="$PROJECT_DIR$" gradleHome="C:\Users\user\.gradle\wrapper\dists\gradle-9.2.1-bin\2t0n5ozlw9xmuyvbp7dnzaxug\gradle-9.2.1" javaHome="C:\Program Files\Android\Android Studio\jbr" gradleVersion="9.2.1" />
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="3D4NtMwkoE1APZrvqtF3dIHYSGl" />
+  <component name="ProjectReloadState">
+    <option name="STATE" value="1" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Android App.app.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "robert-import",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/user/AndroidStudioProjects/AgricApp"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="AgricApp.app" />
+      <option name="ANDROID_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="ALLOW_ASSUME_VERIFIED" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="RESTORE_ENABLED" value="false" />
+      <option name="RESTORE_FILE" value="" />
+      <option name="RESTORE_FRESH_INSTALL_ONLY" value="false" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Hybrid>
+      <Java>
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Java>
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8d9b0db8-e9d0-4faa-a54d-a7b59d560515" name="Changes" comment="" />
+      <created>1777537606990</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1777537606990</updated>
+    </task>
+    <task id="LOCAL-00013" summary="activity_product_detail xml file">
+      <option name="closed" value="true" />
+      <created>1777629106133</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1777629106133</updated>
+    </task>
+    <task id="LOCAL-00014" summary="activity_profile xml file">
+      <option name="closed" value="true" />
+      <created>1777629176139</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1777629176139</updated>
+    </task>
+    <task id="LOCAL-00015" summary="activity_profit_calculator xml file">
+      <option name="closed" value="true" />
+      <created>1777629849202</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1777629849202</updated>
+    </task>
+    <task id="LOCAL-00016" summary="activity_qr_scanner xml file">
+      <option name="closed" value="true" />
+      <created>1777629912640</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1777629912640</updated>
+    </task>
+    <task id="LOCAL-00017" summary="activity_treatment xml file">
+      <option name="closed" value="true" />
+      <created>1777630005041</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1777630005041</updated>
+    </task>
+    <task id="LOCAL-00018" summary="activity_weather xml file">
+      <option name="closed" value="true" />
+      <created>1777630039751</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1777630039751</updated>
+    </task>
+    <task id="LOCAL-00019" summary="AgroInputsActivity.kt file">
+      <option name="closed" value="true" />
+      <created>1777630109529</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1777630109529</updated>
+    </task>
+    <task id="LOCAL-00020" summary="updating the AndroidProjetSystem.xml file">
+      <option name="closed" value="true" />
+      <created>1777630216182</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1777630216182</updated>
+    </task>
+    <task id="LOCAL-00021" summary="updating the bg_chip_selected.xml file">
+      <option name="closed" value="true" />
+      <created>1777630264961</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1777630264961</updated>
+    </task>
+    <task id="LOCAL-00022" summary="updating the bg_chip_unselected.xml file">
+      <option name="closed" value="true" />
+      <created>1777630341656</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1777630341656</updated>
+    </task>
+    <task id="LOCAL-00023" summary="updating the bg_dashboard_card.xml file">
+      <option name="closed" value="true" />
+      <created>1777630401887</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1777630401887</updated>
+    </task>
+    <task id="LOCAL-00024" summary="updating the bg_input_field.xml file">
+      <option name="closed" value="true" />
+      <created>1777630444486</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1777630444486</updated>
+    </task>
+    <task id="LOCAL-00025" summary=" the bottom_navmenu.xml file">
+      <option name="closed" value="true" />
+      <created>1777630498477</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1777630498477</updated>
+    </task>
+    <task id="LOCAL-00026" summary=" updating compiler.xml file">
+      <option name="closed" value="true" />
+      <created>1777634304905</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1777634304905</updated>
+    </task>
+    <task id="LOCAL-00027" summary=" updating communityTips.kt file">
+      <option name="closed" value="true" />
+      <created>1777634381426</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1777634381426</updated>
+    </task>
+    <task id="LOCAL-00028" summary=" updating Activity.kt file">
+      <option name="closed" value="true" />
+      <created>1777634435228</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1777634435228</updated>
+    </task>
+    <task id="LOCAL-00029" summary=" updating CropInfoActivity.kt file">
+      <option name="closed" value="true" />
+      <created>1777634469051</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1777634469051</updated>
+    </task>
+    <task id="LOCAL-00030" summary=" updating CropInfoActivity.kt file">
+      <option name="closed" value="true" />
+      <created>1777634641197</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1777634641197</updated>
+    </task>
+    <task id="LOCAL-00031" summary=" updating deploymentTargetSelector.xml file">
+      <option name="closed" value="true" />
+      <created>1777634716279</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1777634716279</updated>
+    </task>
+    <task id="LOCAL-00032" summary=" updating diseaseactivity.kt file">
+      <option name="closed" value="true" />
+      <created>1777634843292</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1777634843292</updated>
+    </task>
+    <task id="LOCAL-00033" summary=" updating govtAlerts.kt file">
+      <option name="closed" value="true" />
+      <created>1777634878117</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1777634878117</updated>
+    </task>
+    <task id="LOCAL-00034" summary=" updating gradle.xml file">
+      <option name="closed" value="true" />
+      <created>1777634947073</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1777634947073</updated>
+    </task>
+    <task id="LOCAL-00035" summary="adding ambush and banana images">
+      <option name="closed" value="true" />
+      <created>1777635223002</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1777635223002</updated>
+    </task>
+    <task id="LOCAL-00036" summary="adding bean_seeds and bean_pods images">
+      <option name="closed" value="true" />
+      <created>1777635273431</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1777635273431</updated>
+    </task>
+    <task id="LOCAL-00037" summary="adding cassava and cow images">
+      <option name="closed" value="true" />
+      <created>1777635415423</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1777635415423</updated>
+    </task>
+    <task id="LOCAL-00038" summary="adding dudu and goat images">
+      <option name="closed" value="true" />
+      <created>1777635508878</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1777635508878</updated>
+    </task>
+    <task id="LOCAL-00039" summary="adding hoe and ic_logo images">
+      <option name="closed" value="true" />
+      <created>1777635604510</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1777635604510</updated>
+    </task>
+    <task id="LOCAL-00040" summary="adding sweet_potatoes and tomato images">
+      <option name="closed" value="true" />
+      <created>1777635754547</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1777635754547</updated>
+    </task>
+    <task id="LOCAL-00041" summary="adding tractor and vegetables images">
+      <option name="closed" value="true" />
+      <created>1777635836337</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1777635836337</updated>
+    </task>
+    <task id="LOCAL-00042" summary="adding soya_beans and sprayer images">
+      <option name="closed" value="true" />
+      <created>1777635920019</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1777635920019</updated>
+    </task>
+    <task id="LOCAL-00043" summary="updating gradlel.xml file and AndroidProjectSystem.xmal">
+      <option name="closed" value="true" />
+      <created>1777636209735</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1777636209735</updated>
+    </task>
+    <task id="LOCAL-00044" summary="updating ic_email.xml file and ic_arrow_back.xmal">
+      <option name="closed" value="true" />
+      <created>1777636270974</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1777636270974</updated>
+    </task>
+    <task id="LOCAL-00045" summary="updating ic_home.xml file and ic_info.xml files">
+      <option name="closed" value="true" />
+      <created>1777636315094</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1777636315094</updated>
+    </task>
+    <task id="LOCAL-00046" summary="updating ic_lock.xml file and ic_logout.xml files">
+      <option name="closed" value="true" />
+      <created>1777636842511</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1777636842511</updated>
+    </task>
+    <task id="LOCAL-00047" summary="updating ic_plus.xml file and ic_menu.xml files">
+      <option name="closed" value="true" />
+      <created>1777637119220</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1777637119220</updated>
+    </task>
+    <task id="LOCAL-00048" summary="updating ic_marketplace.xml file and deploymentTargetSelector.xml files">
+      <option name="closed" value="true" />
+      <created>1777637865979</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1777637865979</updated>
+    </task>
+    <task id="LOCAL-00049" summary="updating ic_messages.xml file and ic_notifications.xml files">
+      <option name="closed" value="true" />
+      <created>1777637916200</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1777637916200</updated>
+    </task>
+    <task id="LOCAL-00050" summary="updating ic_person.xml file and ic_search.xml files">
+      <option name="closed" value="true" />
+      <created>1777637954598</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1777637954598</updated>
+    </task>
+    <task id="LOCAL-00051" summary="updating ic_settings.xml file and ic_weather.xml files">
+      <option name="closed" value="true" />
+      <created>1777637981862</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1777637981862</updated>
+    </task>
+    <task id="LOCAL-00052" summary="updating item_agro_input.xml file and item_community_tips.xml files">
+      <option name="closed" value="true" />
+      <created>1777638053227</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1777638053227</updated>
+    </task>
+    <task id="LOCAL-00053" summary="updating item_crop.xml file and item_growth_stage.xml files">
+      <option name="closed" value="true" />
+      <created>1777638093031</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1777638093031</updated>
+    </task>
+    <task id="LOCAL-00054" summary="updating item_marketplace.xml file and item_message.xml files">
+      <option name="closed" value="true" />
+      <created>1777638154094</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1777638154094</updated>
+    </task>
+    <task id="LOCAL-00055" summary="updating item_notification.xml file and item_profile_option.xml files">
+      <option name="closed" value="true" />
+      <created>1777639302722</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1777639302722</updated>
+    </task>
+    <task id="LOCAL-00056" summary="updating item_symptom.xml file and item_weather_forecast.xml files">
+      <option name="closed" value="true" />
+      <created>1777639447623</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1777639447623</updated>
+    </task>
+    <task id="LOCAL-00057" summary="adding maize and maize seed images">
+      <option name="closed" value="true" />
+      <created>1777639514279</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1777639514279</updated>
+    </task>
+    <task id="LOCAL-00058" summary="updating marktetplaceActivity.kt and marketTrendsActivity.kt files">
+      <option name="closed" value="true" />
+      <created>1777639666558</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1777639666558</updated>
+    </task>
+    <task id="LOCAL-00059" summary="updating messagesActivity.kt and notificationActivity.kt files">
+      <option name="closed" value="true" />
+      <created>1777639736160</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1777639736160</updated>
+    </task>
+    <task id="LOCAL-00060" summary="updating PestRiskActivity.kt ,ProfileActivity and productDetailActivity.kt files">
+      <option name="closed" value="true" />
+      <created>1777640205808</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1777640205808</updated>
+    </task>
+    <task id="LOCAL-00061" summary="updating ProfileCalculatorActivity.kt QrScannerActivity and WeatherActivity.kt files">
+      <option name="closed" value="true" />
+      <created>1777640392401</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1777640392401</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="adding cassava and cow images" />
+    <MESSAGE value="adding dudu and goat images" />
+    <MESSAGE value="adding hoe and ic_logo images" />
+    <MESSAGE value="adding sweet_potatoes and tomato images" />
+    <MESSAGE value="adding tractor and vegetables images" />
+    <MESSAGE value="adding soya_beans and sprayer images" />
+    <MESSAGE value="updating gradlel.xml file and AndroidProjectSystem.xmal" />
+    <MESSAGE value="updating ic_email.xml file and ic_arrow_back.xmal" />
+    <MESSAGE value="updating ic_home.xml file and ic_info.xml files" />
+    <MESSAGE value="updating ic_lock.xml file and ic_logout.xml files" />
+    <MESSAGE value="updating ic_plus.xml file and ic_menu.xml files" />
+    <MESSAGE value="updating ic_marketplace.xml file and deploymentTargetSelector.xml files" />
+    <MESSAGE value="updating ic_messages.xml file and ic_notifications.xml files" />
+    <MESSAGE value="updating ic_person.xml file and ic_search.xml files" />
+    <MESSAGE value="updating ic_settings.xml file and ic_weather.xml files" />
+    <MESSAGE value="updating item_agro_input.xml file and item_community_tips.xml files" />
+    <MESSAGE value="updating item_crop.xml file and item_growth_stage.xml files" />
+    <MESSAGE value="updating item_marketplace.xml file and item_message.xml files" />
+    <MESSAGE value="updating item_notification.xml file and item_profile_option.xml files" />
+    <MESSAGE value="updating item_symptom.xml file and item_weather_forecast.xml files" />
+    <MESSAGE value="adding maize and maize seed images" />
+    <MESSAGE value="updating marktetplaceActivity.kt and marketTrendsActivity.kt files" />
+    <MESSAGE value="updating messagesActivity.kt and notificationActivity.kt files" />
+    <MESSAGE value="updating PestRiskActivity.kt ,ProfileActivity and productDetailActivity.kt files" />
+    <MESSAGE value="updating ProfileCalculatorActivity.kt QrScannerActivity and WeatherActivity.kt files" />
+    <option name="LAST_COMMIT_MESSAGE" value="updating ProfileCalculatorActivity.kt QrScannerActivity and WeatherActivity.kt files" />
+  </component>
+  <component name="play_dynamic_filters_status">
+    <option name="appIdToCheckInfo">
+      <map>
+        <entry key="com.example.agricapp">
+          <value>
+            <CheckInfo lastCheckTimestamp="1777626891357" />
+          </value>
+        </entry>
+        <entry key="com.example.agricapp.test">
+          <value>
+            <CheckInfo lastCheckTimestamp="1777626891350" />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

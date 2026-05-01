@@ -23,7 +23,12 @@
                 android:layout_height="24dp"
                 android:layout_centerVertical="true"
                 android:src="@drawable/ic_arrow_back"
+<<<<<<< HEAD
                 android:contentDescription="Back"/>
+=======
+                android:contentDescription="Back"
+                app:tint="#FFFFFF"/>
+>>>>>>> Robert
 
             <TextView
                 android:layout_width="wrap_content"
@@ -85,6 +90,10 @@
                     android:layout_marginBottom="12dp"/>
 
                 <GridLayout
+<<<<<<< HEAD
+=======
+                    android:id="@+id/symptomGrid"
+>>>>>>> Robert
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:columnCount="4"
@@ -92,6 +101,7 @@
                     android:columnOrderPreserved="false"
                     android:useDefaultMargins="true"
                     android:layout_marginBottom="24dp">
+<<<<<<< HEAD
 
                     <!-- Symptom Items -->
                     <include layout="@layout/item_symptom" />
@@ -102,6 +112,9 @@
                     <include layout="@layout/item_symptom" />
                     <include layout="@layout/item_symptom" />
                     <include layout="@layout/item_symptom" />
+=======
+                    <!-- Dynamic content will be added here -->
+>>>>>>> Robert
                 </GridLayout>
 
                 <!-- 3. Describe the Problem -->
