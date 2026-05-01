@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
+import android.view.View
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.LinearLayout
@@ -13,68 +14,67 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class CropInfoActivity : AppCompatActivity() {
+class AgroInputsActivity : AppCompatActivity() {
 
-    private lateinit var cropListContainer: LinearLayout
+    private lateinit var inputsListContainer: LinearLayout
     private lateinit var searchEditText: EditText
-    private var allCrops = listOf<Crop>()
-    private var currentCategory = "All Crops"
+    private var allInputs = listOf<AgroInput>()
+    private var currentCategory = "Seeds"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_crop_info)
+        setContentView(R.layout.activity_agro_inputs)
 
-        cropListContainer = findViewById(R.id.cropListContainer)
+        inputsListContainer = findViewById(R.id.inputsListContainer)
         searchEditText = findViewById(R.id.searchEditText)
         val backBtn = findViewById<ImageView>(R.id.backBtn)
-        
+
         backBtn.setOnClickListener { finish() }
 
         // Initialize Data
-        allCrops = listOf(
-            Crop("Maize", "A cereal crop widely grown in Uganda.", R.drawable.maize, "Cereals"),
-            Crop("Rice", "Important cereal grown in swampy areas.", R.drawable.rice, "Cereals"),
-            Crop("Beans", "High in protein and well grown in Uganda.", R.drawable.bean_pods, "Legumes"),
-            Crop("Soya Beans", "Versatile legume for oil and protein.", R.drawable.soya_beans, "Legumes"),
-            Crop("Cassava", "Grows well in warm climates.", R.drawable.cassava, "Root Crops"),
-            Crop("Sweet Potatoes", "Staple root crop in many regions.", R.drawable.sweet_potatoes, "Root Crops"),
-            Crop("Banana", "Source of food and income.", R.drawable.banana, "Vegetables"),
-            Crop("Tomato", "High value vegetable crop.", R.drawable.tomato, "Vegetables")
+        allInputs = listOf(
+            AgroInput("Maize Seeds (Longe 10H)", "Certified hybrid seeds", "UGX 45,000 / 2kg", R.drawable.maize_seeds, "Seeds"),
+            AgroInput("Beans Seeds (NABE 15)", "High yielding variety", "UGX 40,000 / 1kg", R.drawable.bean_seeds, "Seeds"),
+            AgroInput("NPK Fertilizer 17:17:17", "For all crop types", "UGX 70,000 / 50kg", R.drawable.npk, "Fertilizers"),
+            AgroInput("Urea Fertilizer", "Rich in Nitrogen", "UGX 150,000 / 50kg", R.drawable.urea, "Fertilizers"),
+            AgroInput("Ambush Top (Fungicide)", "Controls many fungal diseases", "UGX 22,000 / 100ml", R.drawable.ambush, "Pesticides"),
+            AgroInput("Dudu-Cyper", "Effective against fall armyworm", "UGX 15,000 / 100ml", R.drawable.dudu, "Pesticides"),
+            AgroInput("Hand Hoe", "Durable steel head", "UGX 15,000", R.drawable.hoe, "Tools"),
+            AgroInput("Knapsack Sprayer", "16L manual sprayer", "UGX 120,000", R.drawable.sprayer, "Tools")
         )
 
         setupFilters()
         setupSearch()
         setupBottomNavigation()
-        filterAndDisplayCrops()
+        filterAndDisplayInputs()
     }
 
     private fun setupSearch() {
         searchEditText.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                filterAndDisplayCrops()
+                filterAndDisplayInputs()
             }
             override fun afterTextChanged(s: Editable?) {}
         })
     }
 
     private fun setupFilters() {
-        val chipAll = findViewById<TextView>(R.id.chipAll)
-        val chipCereals = findViewById<TextView>(R.id.chipCereals)
-        val chipLegumes = findViewById<TextView>(R.id.chipLegumes)
-        val chipRootCrops = findViewById<TextView>(R.id.chipRootCrops)
-        val chipVegetables = findViewById<TextView>(R.id.chipVegetables)
+        val chips = mapOf(
+            R.id.chipSeeds to "Seeds",
+            R.id.chipFertilizers to "Fertilizers",
+            R.id.chipPesticides to "Pesticides",
+            R.id.chipTools to "Tools"
+        )
 
-        val chips = listOf(chipAll, chipCereals, chipLegumes, chipRootCrops, chipVegetables)
-        val categories = listOf("All Crops", "Cereals", "Legumes", "Root Crops", "Vegetables")
+        val chipViews = chips.keys.map { findViewById<TextView>(it) }
 
-        for (i in chips.indices) {
-            val chip = chips[i]
-            val category = categories[i]
+        for ((id, category) in chips) {
+            val chip = findViewById<TextView>(id)
             chip.setOnClickListener {
                 currentCategory = category
-                updateChipStyles(chip, chips)
-                filterAndDisplayCrops()
+                updateChipStyles(chip, chipViews)
+                filterAndDisplayInputs()
             }
         }
     }
@@ -117,35 +117,34 @@ class CropInfoActivity : AppCompatActivity() {
         }
     }
 
-    private fun filterAndDisplayCrops() {
+    private fun filterAndDisplayInputs() {
         val query = searchEditText.text.toString().lowercase()
-        val filtered = allCrops.filter { crop ->
-            (currentCategory == "All Crops" || crop.category == currentCategory) &&
-            crop.name.lowercase().contains(query)
+        val filtered = allInputs.filter { input ->
+            input.category == currentCategory &&
+            (input.name.lowercase().contains(query) || input.description.lowercase().contains(query))
         }
-
-        displayCrops(filtered)
+        displayInputs(filtered)
     }
 
-    private fun displayCrops(crops: List<Crop>) {
-        cropListContainer.removeAllViews()
-        for (crop in crops) {
-            val itemView = layoutInflater.inflate(R.layout.item_crop, cropListContainer, false)
-            itemView.findViewById<TextView>(R.id.cropName).text = crop.name
-            itemView.findViewById<TextView>(R.id.cropDesc).text = crop.description
-            itemView.findViewById<ImageView>(R.id.cropImage).setImageResource(crop.imageRes)
+    private fun displayInputs(inputs: List<AgroInput>) {
+        inputsListContainer.removeAllViews()
+        for (input in inputs) {
+            val itemView = layoutInflater.inflate(R.layout.item_agro_input, inputsListContainer, false)
+            itemView.findViewById<TextView>(R.id.inputName).text = input.name
+            itemView.findViewById<TextView>(R.id.inputDesc).text = input.description
+            itemView.findViewById<TextView>(R.id.inputPrice).text = input.price
+            itemView.findViewById<ImageView>(R.id.inputImage).setImageResource(input.imageRes)
             
-            // Functionality for the "arrow" or item click
             itemView.setOnClickListener {
                 val intent = Intent(this, ProductDetailActivity::class.java)
-                intent.putExtra("PRODUCT_NAME", crop.name)
-                intent.putExtra("PRODUCT_IMAGE", crop.imageRes)
+                intent.putExtra("PRODUCT_NAME", input.name)
+                intent.putExtra("PRODUCT_IMAGE", input.imageRes)
                 startActivity(intent)
             }
 
-            cropListContainer.addView(itemView)
+            inputsListContainer.addView(itemView)
         }
     }
 
-    data class Crop(val name: String, val description: String, val imageRes: Int, val category: String)
+    data class AgroInput(val name: String, val description: String, val price: String, val imageRes: Int, val category: String)
 }
