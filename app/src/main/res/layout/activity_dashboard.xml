@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Top Bar and Header Background -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2E7D32"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/menuIcon"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/ic_menu"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="Menu"/>
+
+            <LinearLayout
+                android:id="@+id/greetingLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toEndOf="@id/menuIcon"
+                android:layout_marginStart="16dp"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hello, Farmer! 👋"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Good morning"
+                    android:textColor="#CCFFFFFF"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/notificationsIconTop"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/ic_notifications"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="Notifications"/>
+        </RelativeLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <!-- Feature Banner Card -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="4dp"
+                    android:layout_marginBottom="24dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_launcher_background"
+                            android:alpha="0.3"
+                            android:contentDescription="Banner Image"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="20dp"
+                            android:layout_centerVertical="true">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Good farming"
+                                android:textColor="#000000"
+                                android:textSize="18sp"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="today for a better\ntomorrow."
+                                android:textColor="#757575"
+                                android:textSize="14sp"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quick Access"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="16dp"/>
+
+                <!-- Grid Menu -->
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="3"
+                    android:alignmentMode="alignMargins"
+                    android:columnOrderPreserved="false"
+                    android:useDefaultMargins="true">
+
+                    <!-- Crop Info -->
+                    <LinearLayout
+                        android:id="@+id/cropInfoCard"
+                        style="@style/DashboardIconContainerStyle">
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/ic_info"
+                            android:contentDescription="Crop Info"/>
+                        <TextView
+                            style="@style/DashboardIconTextStyle"
+                            android:text="Crop\nInformation"/>
+                    </LinearLayout>
+
+                    <!-- Disease Detection -->
+                    <LinearLayout
+                        android:id="@+id/diseaseBtn"
+                        style="@style/DashboardIconContainerStyle">
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/ic_plus"
+                            android:contentDescription="Disease Detection"/>
+                        <TextView
+                            style="@style/DashboardIconTextStyle"
+                            android:text="Disease\nDetection"/>
+                    </LinearLayout>
+
+                    <!-- Marketplace -->
+                    <LinearLayout
+                        android:id="@+id/marketBtn"
+                        style="@style/DashboardIconContainerStyle">
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/ic_marketplace"
+                            android:contentDescription="Marketplace"/>
+                        <TextView
+                            style="@style/DashboardIconTextStyle"
+                            android:text="Marketplace"/>
+                    </LinearLayout>
+
+                    <!-- Seeds and Inputs -->
+                    <LinearLayout
+                        android:id="@+id/agroInputsCard"
+                        style="@style/DashboardIconContainerStyle">
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/ic_logo"
+                            android:contentDescription="Seeds and Inputs"/>
+                        <TextView
+                            style="@style/DashboardIconTextStyle"
+                            android:text="Seeds &amp;\nAgro-Inputs"/>
+                    </LinearLayout>
+
+                    <!-- Crop Calendar -->
+                    <LinearLayout
+                        android:id="@+id/cropCalendarCard"
+                        style="@style/DashboardIconContainerStyle">
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/ic_person"
+                            android:contentDescription="Crop Calendar"/>
+                        <TextView
+                            style="@style/DashboardIconTextStyle"
+                            android:text="Crop\nCalendar"/>
+                    </LinearLayout>
+
+                    <!-- Weather -->
+                    <LinearLayout
+                        android:id="@+id/weatherCard"
+                        style="@style/DashboardIconContainerStyle">
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/ic_weather"
+                            android:contentDescription="Weather Updates"/>
+                        <TextView
+                            style="@style/DashboardIconTextStyle"
+                            android:text="Weather\nUpdates"/>
+                    </LinearLayout>
+
+                    <!-- Profit Calculator -->
+                    <LinearLayout
+                        android:id="@+id/profitCalcCard"
+                        style="@style/DashboardIconContainerStyle">
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/ic_home"
+                            app:tint="#2E7D32"
+                            android:contentDescription="Profit Calculator"/>
+                        <TextView
+                            style="@style/DashboardIconTextStyle"
+                            android:text="Profit\nCalculator"/>
+                    </LinearLayout>
+
+                    <!-- Expert Chat -->
+                    <LinearLayout
+                        android:id="@+id/expertChatCard"
+                        style="@style/DashboardIconContainerStyle">
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/ic_messages"
+                            app:tint="#2E7D32"
+                            android:contentDescription="Expert Chat"/>
+                        <TextView
+                            style="@style/DashboardIconTextStyle"
+                            android:text="Ask\nExpert"/>
+                    </LinearLayout>
+                </GridLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="#FFFFFF"
+            app:itemIconTint="#2E7D32"
+            app:itemTextColor="#2E7D32"
+            app:menu="@menu/bottom_nav_menu" />
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
